@@ -10,6 +10,7 @@ const Game = ({
   wrongLetters,
   guesses,
   score,
+  userName,
 }) => {
   const [letter, setLetter] = useState("");
   const letterInputRef = useRef(null);
@@ -30,6 +31,7 @@ const Game = ({
       </p>
 
       <h1>Adivinhe a palavra: </h1>
+      <h2>Boa sorte, {userName} (:</h2>
       <h3 className="tip">
         Dica sobre a palavra: <span>{pickedCategory}</span>
         <p>Você ainda tem {guesses} tentativas</p>
