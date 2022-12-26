@@ -19,10 +19,7 @@ import GameOver from "./components/GameOver";
 
 //Porque essa não vai ?????
 
-// const userName = () => {
-//   prompt("Digite o seu nome");
-// };
-
+//f
 const userName = prompt("Digite o seu nome");
 
 const stages = [
@@ -40,6 +37,8 @@ function App() {
   const [pickedWord, setPickedWord] = useState("");
   const [pickedCategory, setPickedCategory] = useState("");
   const [letters, setLetters] = useState([]);
+
+  const [word, setWord] = useState("");
 
   //Letras Adivinhadas
   const [guessedLetters, setGuessedLetters] = useState([]);
@@ -171,7 +170,13 @@ function App() {
         />
       )}
       {gameStage === "end" && (
-        <GameOver retry={retry} score={score} userName={userName} />
+        <GameOver
+          retry={retry}
+          score={score}
+          userName={userName}
+          word={word}
+          pickedWord={pickedWord}
+        />
       )}
       <footer>Criado por © Antonio Cristovam</footer>
     </div>

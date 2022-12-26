@@ -14,7 +14,7 @@ export const wordsList = {
     "Intestino",
     "Esôfago",
   ],
-  computador: ["Mouse", "Teclado", "Monitor", "Gabinete", "Mouser", "Fonte"],
+  computador: ["Mouse", "Teclado", "Monitor", "Gabinete", "Fonte"],
   programação: [
     "Linguagem",
     "Framework",
